@@ -24,9 +24,7 @@ export function initSorting(columns) {
                     order = column.dataset.value;
                 }
             })
-            // @todo: #3.3 — получить выбранный режим сортировки
         }
-        console.log(field);
 
         return sortCollection(data, field, order);
     }
