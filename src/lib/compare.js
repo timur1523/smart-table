@@ -187,6 +187,7 @@ const rules = {
             }
         }
 
+
         // Совпадений не найдено ни в одном поле
         return { result: false };
     }
