@@ -20,7 +20,6 @@ export function initData(sourceData) {
     async function getIndexes() {
         if (!sellers || !customers) {
             [sellers, customers] = await Promise.all([fetch(`${BASE_URL}/sellers`).then(res => res.json()), fetch(`${BASE_URL}/customers`).then(res => res.json())]);
-            console.log({ customers, sellers });
         }
         return { customers, sellers };
     }
