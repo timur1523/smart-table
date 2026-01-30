@@ -14,7 +14,7 @@ export function initTable(settings, onAction) {
 
     // @todo: #1.2 —  вывести дополнительные шаблоны до и после таблицы
 
-    before.forEach(item => {
+    before.reverse().forEach(item => {
         root[item] = cloneTemplate(item);
         root.container.prepend(root[item].container)
     });
